@@ -1,30 +1,48 @@
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-image: url('pic.png');
+    /*https://harmash.com/tutorials/css/background*/
 }
 
-.game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 10px;
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+#score {
+    color: white;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 320px;
+    background-color:gray;
+    padding: 10px;
 }
 
 .card {
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    color: white;
+    cursor: pointer;
 }
 
 .card.flipped {
-    background-color:#ffcc00;
+    background-color: skyblue;
+    color: black;
+    transition: background-color .2s linear;
+    /*https://academy.hsoub.com/programming/css/%D8%AA%D8%A3%D8%AB%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9-%D9%81%D9%8A-css-r517/*/
 }

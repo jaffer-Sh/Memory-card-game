@@ -7,3 +7,4 @@
 - Start building the main HTML structure and adding links with CSS and JS.
 - In CSS start modifying the body, cards and words inside the cards.
 - In j.s unmatched cards are placed fast to win at the end of the game.
+ 
