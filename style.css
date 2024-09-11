@@ -17,6 +17,7 @@ h1 {
 }
 #score {
     color: white;
+    font-size: x-large;
 }
 .game {
     display: flex;

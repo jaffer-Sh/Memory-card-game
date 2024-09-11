@@ -86,6 +86,7 @@ setTimeout(() => {
 function resetG() {
     const game = document.getElementById('game')
     game.innerHTML = ''
+// https://3alam.pro/questions/829
     match = 0
     score = 0
     updateS()
